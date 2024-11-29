@@ -1,12 +1,29 @@
-# crypto_dashboard
-
 # CryptoDashboard
+This is a Crypto Dashboard project built using Angular. The dashboard integrates with the CoinGecko API to provide real-time cryptocurrency data. The project demonstrates functionality such as data filtering, sorting, searching, and visualization using advanced charts, along with state management using NgRx and RxJS.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9 using Standalone components.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
+#Features.
+1. Cryptocurrency Data Table.
+Displays a list of cryptocurrencies with their real-time prices, market caps, and other relevant information.
+Supports: Sorting, Filtering, Searching, Pagination. Reordering columns between each other and sticky first column.
+2. Data Visualization.
+Visualize cryptocurrency trends and performance using bar Highcharts.
+
+#Real-Time API Integration.
+Fetches cryptocurrency data from the CoinGecko API ('https://api.coingecko.com/api/v3/coins/markets').
+
+#Responsive Design.
+Fully responsive design, optimized for both desktop and mobile devices.
+Styled with Angular Material and custom CSS.
 
 ## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Istallation Steps:
+1. Clone the repository:
+1.1. git clone https://github.com/olgaserdiuk/crypto_dashboard.git
+1.2. cd crypto_dashboard/
+2. Install dependencies.
+npm install
+3. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
