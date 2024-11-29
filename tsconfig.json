@@ -15,10 +15,12 @@
     "sourceMap": true,
     "declaration": false,
     "experimentalDecorators": true,
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "importHelpers": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
     "target": "ES2022",
-    "module": "ES2022",
+    "module": "esnext",
     "lib": [
       "ES2022",
       "dom"

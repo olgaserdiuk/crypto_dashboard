@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+$bkg-color: #0f171a;
+$font-color: #c4bbbb;
+$mona-sans: "Mona Sans", "Roboto", sans-serif;
+$main-color: #26A9E0;
+$btn-hover: #65C9F3;
+
+body {
+  background-color: $bkg-color;
+  font-family: $mona-sans;
+  color: $font-color;
+}
+
+.btn-style {
+  border-radius: 50px;
+  background-color: $main-color;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $btn-hover;
+  }
+}
+
+.mat-mdc-select-value-text,
+.mat-mdc-select-arrow,
+.mat-mdc-paginator-icon {
+  color: $main-color !important;
+}
+
+.mat-mdc-progress-spinner .mdc-circular-progress__determinate-circle,
+.mat-mdc-progress-spinner .mdc-circular-progress__indeterminate-circle-graphic {
+  stroke: $font-color !important;
+}
+
+.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
+  color: $main-color !important;
+}
+.mat-mdc-option .mat-pseudo-checkbox,
+.mat-pseudo-checkbox-minimal.mat-pseudo-checkbox-checked::after,
+.mat-pseudo-checkbox-minimal.mat-pseudo-checkbox-indeterminate::after {
+--mat-minimal-pseudo-checkbox-selected-checkmark-color: #26A9E0 !important;
+}
+
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-floating-label {
+  color: $main-color !important;
+}
+
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing {
+  border-color: $main-color !important;
+}
+
+.mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: $main-color !important;
+}
+
+.mat-mdc-paginator-icon {
+  fill: $font-color !important;
+}

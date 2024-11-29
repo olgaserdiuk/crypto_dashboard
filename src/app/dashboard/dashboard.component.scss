@@ -1,0 +1,279 @@
+$mona-sans: "Mona Sans", "Roboto", sans-serif;
+$header-color: #c7c3c3;
+$bkg-color: #0f171a;
+$card-bkg: #141e22;
+$font-color: #f3f0f0;
+$odd-row: #161c1e;
+$even-row: #24292b;
+$main-color: #26A9E0;
+$btn-hover: #65C9F3;
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: $header-color;
+}
+
+.btn-style {
+  border-radius: 50px;
+  background-color: $main-color;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $btn-hover;
+  }
+}
+
+.mat-column-market_cap,
+.mat-column-total_volume,
+.mat-column-circulating_supply,
+.mat-column-circulating_supply,
+.mat-column-id,
+.mat-column-name {
+  min-width: 160px;
+}
+
+.mat-column-symbol,
+.mat-column-current_price,
+.mat-column-high_24h,
+.mat-column-low_24h,
+.mat-column-price_change_percentage_24h {
+  min-width: 110px;
+}
+
+.card {
+    padding: 20px;
+    background-color: $card-bkg;
+    border-radius: 40px;
+}
+
+mat-paginator {
+  background-color: $card-bkg;
+}
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+
+
+  mat-table {
+  width: 100%;
+    table-layout: auto;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+    margin: 0px;
+    background-color: $card-bkg;
+
+  }
+
+  .mat-mdc-row,
+  .mdc-data-table__content,
+  .mat-mdc-header-row {
+    font-family: $mona-sans;
+    color: $font-color;
+    word-break: break-word;
+  }
+
+
+  .mat-mdc-header-row {
+    font-weight: 700;
+    color: #f5f5f5;
+    background-color: $bkg-color;
+  }
+
+  .mat-row,
+  .mat-header-row {
+    display: table-row;
+  }
+
+  .mat-cell,
+  .mat-header-cell {
+    word-wrap: initial;
+    display: table-cell;
+    padding: 0px 5px;
+    line-break: unset;
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+}
+
+.odd-row {
+  background-color: $odd-row;
+}
+
+.even-row {
+  background-color: $even-row;
+}
+
+.odd-row:hover,
+.even-row:hover {
+  background-color: $main-color !important;
+}
+
+.loading-spinner {
+  background-color: $card-bkg;
+}
+
+
+mat-paginator,
+.mat-mdc-select-value {
+  color: $font-color !important;
+}
+
+.table-responsive::-webkit-scrollbar {
+  height: 15px;
+  width: 4px;
+  background: rgb(31, 30, 30);
+}
+
+.table-responsive::-webkit-scrollbar-thumb:horizontal {
+  background: #D3D3D3;
+  border-radius: 10px;
+}
+
+.search-field {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(170, 170, 171);
+  border-radius: 25px;
+  border: 0;
+  height: 45px;
+  padding: 8px 8px 8px 50px;
+  width: 100%;
+  background: #f1f1f1;
+  transition: background 0.2s, width 0.2s;
+
+  &:hover {
+    border: none;
+    background: #f7f7f7;
+  }
+
+  &:focus {
+    outline: none;
+    color: #999999;
+
+    &:hover {
+      background: #f7f7f7;
+    }
+  }
+}
+
+svg{
+    margin-left: -21px;
+      position: relative;
+      top: 37px;
+      left: 34px;
+      z-index: 10;
+      height: 28px;
+      width: 28px;
+
+  &:hover {
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+
+    &:hover {
+      outline: none;
+    }
+  }
+
+  .fa-search:before {
+    color: #999999;
+  }
+}
+
+.input-style {
+  margin-bottom: 0px;
+  height: 70px;
+}
+
+.mat-mdc-form-field {
+  display: initial !important;
+}
+
+.link-style {
+  color: $main-color;
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+
+  &:hover {
+    color: $btn-hover;
+    text-decoration: underline;
+  }
+}
+
+//the first column for a table is sticky
+mat-table mat-header-row mat-header-cell:first-child,
+mat-table .mat-mdc-cell:first-child {
+  position: sticky;
+  position: -webkit-sticky;
+  left: -1px;
+}
+
+mat-table mat-header-row mat-header-cell:first-child {
+  z-index: 998;
+}
+
+mat-table .mat-mdc-cell:first-child {
+  z-index: 1;
+}
+
+.cdk-drag-preview {
+  opacity: 0.7;
+
+  .panel-heading {
+    background: $bkg-color;
+    border-color: $bkg-color;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 4px;
+
+    span {
+      display: block;
+      float: right;
+    }
+  }
+}
+
+.resize-handle {
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  background-color: transparent;
+
+  &:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+  }
+}
+
+.mat-header-row.cdk-drop-list-dragging {
+  transition: transform 0.25s;
+}
+.cdk-drag-placeholder {
+  color: transparent;
+  position: relative;
+  opacity: 0.5;
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
