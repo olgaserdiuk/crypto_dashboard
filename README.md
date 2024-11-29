@@ -19,8 +19,8 @@ Styled with Angular Material and custom CSS.
 ## Development server
 Istallation Steps:
 1. Clone the repository:
-git clone https://github.com/olgaserdiuk/crypto_dashboard.git
-cd crypto_dashboard
+1.1. git clone https://github.com/olgaserdiuk/crypto_dashboard.git
+1.2. cd crypto_dashboard/
 2. Install dependencies.
 npm install
 3. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
